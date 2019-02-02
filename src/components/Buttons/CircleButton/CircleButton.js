@@ -1,6 +1,5 @@
 import React from 'react';
-import IconLeftArrow from '../../../assets/Icons/IconLeftArrow/IconLeftArrow';
-import {colors} from '../../../theme';
+import SVGIcon from '../../../assets/Icons/index';
 
 import { StyledCircleButton,
          StyledCircleButtonWrapper } from './style';
@@ -8,11 +7,12 @@ import { StyledCircleButton,
 const CircleButton = (props) => (
   <StyledCircleButton {...props}>
     <StyledCircleButtonWrapper>
-      <IconLeftArrow
-        width="28"
-        height="28"
-        fill={`${colors.grey03}`}
-        svg={props.svg}
+      <SVGIcon
+        name={props.name}
+        width={props.width}
+        height={props.height}
+        fill={props.fill}
+        title={props.name}
       />
     </StyledCircleButtonWrapper>
   </StyledCircleButton>

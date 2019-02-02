@@ -1,5 +1,5 @@
 import React from 'react';
-import {space} from '../../../theme';
+import {space, colors} from '../../../theme';
 import CircleButton from '../../Buttons/CircleButton/CircleButton';
 
 import {
@@ -20,7 +20,12 @@ const CardVideo = (props) => (
           <StyledNavContainer>
             <div style={{marginRight: `${space[4]}`}}>
               <div style={{border: 'solid green'}}>
-                <CircleButton />
+                <CircleButton
+                  width="28"
+                  height="28"
+                  fill={`${colors.grey03}`}
+                  name="icon-arrow-left"
+                />
               </div>
             </div>
             <div>
@@ -33,6 +38,14 @@ const CardVideo = (props) => (
                   <a href="/" className="active">With errors</a>
                 </StyledLiTag>
               </StyledUlList>
+            </div>
+            <div style={{border: 'solid green'}}>
+              <CircleButton
+                width="28"
+                height="28"
+                fill={`${colors.grey03}`}
+                name="icon-arrow-right"
+              />
             </div>
           </StyledNavContainer>
         </div>
