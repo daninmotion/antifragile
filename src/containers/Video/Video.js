@@ -7,11 +7,12 @@ class Video extends Component {
     return (
       <React.Fragment>
         <StyledCardVideoContainer>
-          <CardVideo />
+          <CardVideo 
+          />
         </StyledCardVideoContainer>
       </React.Fragment>
     );
   }
-}
+};
 
 export default Video;

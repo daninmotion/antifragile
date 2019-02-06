@@ -27,50 +27,86 @@ export const StyledUlList = styled.ul`
   margin-left: ${space[3]};
 `;
 
+// export const StyledLiTag = styled.li`
+//   list-style-type: none;
+//   /* font-weight: ${props => props.active ? `${fontWeight.bold}` : null}; */
+//   position: relative;
+//   margin-bottom: ${space[2]};
+
+//   button {
+//     text-decoration: none;
+//   }
+
+//   button:active {
+//     color: ${colors.purple02};
+//     color: ${props => props.active ? `${colors.purple02}` : `${colors.grey03}`}
+//   }
+
+//   button.active {
+//     font-weight: ${fontWeight.bold};
+//     font-size: ${fontSize[1]};
+//     color: ${colors.purple};
+//   }
+
+//   button.active::before {
+//     background: ${colors.purple};
+//     width: 8px;
+//     height: 8px;
+//     border-radius: 50%;
+//     content: " ";
+//     display: block;
+//     position: absolute;
+//     top: .5em;
+//     left: -1em;
+//   }
+
+//   button.locked {
+//     font-weight: normal;
+//     font-size: ${fontSize[1]};
+//     color: ${colors.grey03};
+//   }
+
+//   button.locked::before {
+//     background: ${colors.grey02};
+//     width: 8px;
+//     height: 8px;
+//     border-radius: 50%;
+//     content: " ";
+//     display: block;
+//     position: absolute;
+//     top: .5em;
+//     left: -1em;
+//   }
+// `;
+
+
+
+
 export const StyledLiTag = styled.li`
   list-style-type: none;
-  font-weight: ${props => props.active ? `${fontWeight.bold}` : null};
+  /* font-weight: ${props => props.active ? `${fontWeight.bold}` : null}; */
   position: relative;
   margin-bottom: ${space[2]};
-
-  a {
-    text-decoration: none;
-  }
-
-  a:active {
-    color: ${colors.purple02};
-  }
-
-  a.active::before {
-    background: ${colors.purple};
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    content: " ";
-    display: block;
-    position: absolute;
-    top: .5em;
-    left: -1em;
-  }
-
-  a.locked {
-    font-weight: normal;
-    font-size: ${fontSize[1]};
-    color: ${colors.grey03};
-  }
-
-  a.locked::before {
-    background: ${colors.grey02};
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    content: " ";
-    display: block;
-    position: absolute;
-    top: .5em;
-    left: -1em;
-  }
 `;
+
+export const StyledButton = styled.button`
+  text-decoration: none;
+  font-size: ${fontSize[1]};
+  color: ${props => props.play ? `${colors.purple}` : `${colors.grey03}`};
+  font-weight: ${props => props.play ? `${fontWeight.bold}` : 'normal' };
+
+  ::before {
+    background: ${props => props.play ? `${colors.purple}` : `${colors.grey02}` };
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: .5em;
+    left: -1em;
+  }
+`
 
 export const StyledNavContainer = styled.div`
   border: solid red;
