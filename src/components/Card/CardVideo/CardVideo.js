@@ -36,7 +36,7 @@ class CardVideo extends Component {
                   <StyledSubTitle>Sign up while booking</StyledSubTitle>
                   <StyledUlList>
                     <StyledLiTag>
-                      <StyledButton>No errors</StyledButton>
+                      <StyledButton play>No errors</StyledButton>
                     </StyledLiTag>
                     <StyledLiTag>
                       <StyledButton>With errors</StyledButton>
