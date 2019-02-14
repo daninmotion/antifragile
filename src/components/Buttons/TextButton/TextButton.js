@@ -1,9 +1,19 @@
 import React from 'react';
-import {StyledTextButton} from './style';
+import SVGIcon from '../../../assets/Icons/index';
+
+import {StyledTextButton, StyledSVGWrapper} from './style';
+
 
 const TextButton = (props) => (
   <StyledTextButton {...props}>
-    {props.children}
+    <div>
+      {props.children}
+    </div>
+    <StyledSVGWrapper>
+      {
+        props.icon ? <SVGIcon width={props.width} height={props.height} name={props.name} fill={props.fill}/> : null
+      }
+    </StyledSVGWrapper>
   </StyledTextButton>
 )
 

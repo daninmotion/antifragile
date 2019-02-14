@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { space, colors } from '../../../theme';
 import CircleButton from '../../Buttons/CircleButton/CircleButton';
+import List from '../../Lists/List';
+import Overdrive from 'react-overdrive';
 
+import { space, colors } from '../../../theme';
 import {
   StyledCardVideoContainer,
   StyledTitle,
@@ -16,51 +18,59 @@ class CardVideo extends Component {
 
   render() {
     return (
-      <StyledCardVideoContainer>
-        <div style={{ border: 'solid green', width: '600px' }}>
-          <div>
-            <StyledTitle>Flows</StyledTitle>
+      <React.Fragment>
+        <div style={{ marginBottom: space[3] }}>
+          <Overdrive id="airbnb">
+            <StyledTitle>Airbnb</StyledTitle>
+          </Overdrive>
+        </div>
+        <StyledCardVideoContainer>
+          <div style={{ width: '600px' }}>
             <div>
-              <StyledNavContainer>
-                <div style={{ marginRight: `${space[4]}` }}>
-                  <div style={{ border: 'solid green' }}>
+              <div>
+                <StyledNavContainer>
+                  <div style={{ marginRight: space[4] }}>
+                    <div>
+                      <CircleButton
+                        width="28"
+                        height="28"
+                        fill={colors.grey03}
+                        name="icon-arrow-left"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <StyledSubTitle>Sign up while booking</StyledSubTitle>
+                    <StyledUlList>
+                      <StyledLiTag>
+                        <StyledButton play>No errors</StyledButton>
+                      </StyledLiTag>
+                      <StyledLiTag>
+                        <StyledButton>With errors</StyledButton>
+                      </StyledLiTag>
+                    </StyledUlList>
+                  </div>
+                  <div style={{ marginLeft: space[6] }}>
                     <CircleButton
                       width="28"
                       height="28"
-                      fill={`${colors.grey03}`}
-                      name="icon-arrow-left"
+                      fill={colors.grey03}
+                      name="icon-arrow-right"
                     />
                   </div>
-                </div>
-                <div>
-                  <StyledSubTitle>Sign up while booking</StyledSubTitle>
-                  <StyledUlList>
-                    <StyledLiTag>
-                      <StyledButton play>No errors</StyledButton>
-                    </StyledLiTag>
-                    <StyledLiTag>
-                      <StyledButton>With errors</StyledButton>
-                    </StyledLiTag>
-                  </StyledUlList>
-                </div>
-                <div style={{ border: 'solid green' }}>
-                  <CircleButton
-                    width="28"
-                    height="28"
-                    fill={`${colors.grey03}`}
-                    name="icon-arrow-right"
-                  />
-                </div>
-              </StyledNavContainer>
+                </StyledNavContainer>
+              </div>
             </div>
           </div>
-        </div>
-        <div style={{ border: 'solid green', width: '600px' }}>
-          <div>
-            <p>Right</p>
+          <div style={{ width: '600px' }}>
+            <div>
+              <List
+                listItem="Problem with ID"
+              />
+            </div>
           </div>
-        </div>
-      </StyledCardVideoContainer >
+        </StyledCardVideoContainer >
+      </React.Fragment>
     );
   }
 };

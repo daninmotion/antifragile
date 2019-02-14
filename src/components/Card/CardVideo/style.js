@@ -109,7 +109,6 @@ export const StyledButton = styled.button`
 `
 
 export const StyledNavContainer = styled.div`
-  border: solid red;
   display: flex;
   align-items: center;
 `
