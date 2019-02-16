@@ -26,7 +26,6 @@ class Video extends Component {
             onVideoSelect={userSelected => this.setState({selectedVideo: userSelected})}
             videos={this.state.videos}
           />
-          <div></div>
         </StyledCardVideoContainer>
       </React.Fragment>
     );
