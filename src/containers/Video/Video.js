@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import CardVideo from '../../components/Card/CardVideo/CardVideo';
-// import Player from '../../components/Player/Player';
 import VideoList from '../../components/VideoList/VideoList';
 import VideoDetail from '../../components/VideoDetail/VideoDetail';
 
@@ -19,21 +17,16 @@ class Video extends Component {
     return (
       <React.Fragment>
         <section>
-          <div>
-            <VideoDetail 
-              video={this.state.selectedVideo}
-            />
-          </div>
-          <div>
-            <VideoList 
-              onVideoSelect={userSelected => this.setState({selectedVideo: userSelected})}
-              videos={this.state.videos}
-            />
-          </div>
+          <VideoDetail 
+            video={this.state.selectedVideo}
+          />
         </section>
         <StyledCardVideoContainer>
-          <CardVideo
+          <VideoList 
+            onVideoSelect={userSelected => this.setState({selectedVideo: userSelected})}
+            videos={this.state.videos}
           />
+          <div></div>
         </StyledCardVideoContainer>
       </React.Fragment>
     );
