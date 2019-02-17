@@ -20,6 +20,7 @@ const VideoList = (props) => {
         key={video.id}
         video={video}
         onUserSelected={props.onVideoSelect}
+        play={props.playHandler}
       />
     )
   });

@@ -10,7 +10,14 @@ class Video extends Component {
       {url:'https://fast.wistia.net/embed/iframe/j35pxlsj3u', id: 'video1', title: 'Airbnb'},
       {url:'http://fast.wistia.net/embed/iframe/e4a27b971d', id: 'video2', title: 'Uber'}
     ],
-    selectedVideo: {url:'https://fast.wistia.net/embed/iframe/j35pxlsj3u', id: 'video1', title: 'Airbnb'}
+    selectedVideo: {url:'https://fast.wistia.net/embed/iframe/j35pxlsj3u', id: 'video1', title: 'Airbnb'},
+    play: true
+  }
+
+  playHandler = () => {
+    this.setState((prevState) => {
+      return {play: !prevState.play}
+    })
   }
 
   render() {
@@ -25,6 +32,7 @@ class Video extends Component {
           <VideoList 
             onVideoSelect={userSelected => this.setState({selectedVideo: userSelected})}
             videos={this.state.videos}
+            playHandler={this.state.play}
           />
         </StyledCardVideoContainer>
       </React.Fragment>

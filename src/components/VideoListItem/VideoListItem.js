@@ -6,9 +6,11 @@ import {StyledLiTag,
 const VideoListItem = (props) => {
   const video = props.video
   const onUserSelected = props.onUserSelected
+
+  const isPlaying = props.play
   return (
     <StyledLiTag onClick={() => onUserSelected(video)}>
-      <StyledButton>
+      <StyledButton play={!isPlaying}>
         {video.title}
       </StyledButton>
     </StyledLiTag>
