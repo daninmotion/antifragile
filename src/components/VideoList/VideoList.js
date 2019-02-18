@@ -65,7 +65,7 @@ const VideoList = (props) => {
         </div>
         <StyledDivider />
         <div style={{maxWidth: '600px'}}>
-          <div style={{ border: 'solid red', marginLeft: space[5] }}>
+          <div style={{ marginLeft: space[5] }}>
             <List
               listItem="Problem with ID"
             />
