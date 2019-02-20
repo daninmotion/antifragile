@@ -31,3 +31,11 @@ export const StyledAvatar = styled.div`
     clip-path: circle(16px at center);
   }
 `
+
+export const StyledBlackAvatar = styled.div`
+  width: 32px;
+  height: 32px;
+  box-shadow: inset 0 0 3px 0 rgba(22, 23, 26, 0.28);
+  border-radius: 100%;
+  background-color: ${colors.black};
+`

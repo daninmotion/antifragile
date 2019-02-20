@@ -7,16 +7,16 @@ import { StyledCardVideoContainer } from './style';
 class Video extends Component {
   state = {
     videos: [
-      {url:'https://fast.wistia.net/embed/iframe/j35pxlsj3u', id: 'video1', title: 'Airbnb'},
-      {url:'http://fast.wistia.net/embed/iframe/e4a27b971d', id: 'video2', title: 'Uber'}
+      {url:'https://fast.wistia.net/embed/iframe/txnanvuk7z', id: 'video1', title: "Signing up while trying to book"},
+      {url:'http://fast.wistia.net/embed/iframe/e4a27b971d', id: 'video2', title: 'Uber'},
     ],
     selectedVideo: {url:'https://fast.wistia.net/embed/iframe/j35pxlsj3u', id: 'video1', title: 'Airbnb'},
     play: true
   }
 
-  playHandler = () => {
-    this.setState((prevState) => {
-      return {play: !prevState.play}
+  playHandler = (event) => {
+    this.setState({
+      play: event.target.play
     })
   }
 

@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <NavBar
-          avatar={'https://randomuser.me/api/portraits/women/44.jpg'}
+          // avatar={'https://randomuser.me/api/portraits/women/44.jpg'}
         />
         <BrowserRouter>
           <Switch>

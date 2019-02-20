@@ -10,17 +10,21 @@ import {
   StyledTitle,
   StyledVideoListWrapper,
   StyledDivider,
-  StyledULTitle
+  StyledULTitle,
+  StyledLeftButtonWrapper,
+  StyledListWrapper,
+  StyledVideoItemWrapper,
+  StyledVideoListWrapperTwo
 } from './style';
 
 const VideoList = (props) => {
-  const videoItems = props.videos.map((video) => {
+  const videoItems = props.videos.map((video, play) => {
     return (
       <VideoListItem
         key={video.id}
         video={video}
         onUserSelected={props.onVideoSelect}
-        play={props.playHandler}
+        play={props.play}
       />
     )
   });
@@ -33,11 +37,11 @@ const VideoList = (props) => {
         </Overdrive>
       </div>
       <StyledVideoListContainer>
-        <div style={{ maxWidth: '600px' }}>
+        <StyledVideoListWrapperTwo>
           <div>
             <StyledVideoListWrapper>
-              <div style={{ marginRight: space[5] }}>
-                <div>
+              <StyledLeftButtonWrapper>
+                <div style={{zIndex: '1000', position: 'relative'}}>
                   <CircleButton
                     width="28"
                     height="28"
@@ -45,14 +49,16 @@ const VideoList = (props) => {
                     name="icon-arrow-left"
                   />
                 </div>
-              </div>
-              <div>
-                <StyledULTitle>Sign up while booking</StyledULTitle>
-                <ul>
-                  {videoItems}
-                </ul>
-              </div>
-              <div style={{ paddingLeft: space[0] }}>
+              </StyledLeftButtonWrapper>
+              <StyledVideoItemWrapper>
+                <StyledULTitle>Sign up</StyledULTitle>
+                <div style={{width: '100px'}}>
+                  <ul>
+                    {videoItems}
+                  </ul>
+                </div>
+              </StyledVideoItemWrapper>
+              <div style={{ paddingLeft: space[0], position: 'relative' }}>
                 <CircleButton
                   width="28"
                   height="28"
@@ -62,15 +68,15 @@ const VideoList = (props) => {
               </div>
             </StyledVideoListWrapper>
           </div>
-        </div>
+        </StyledVideoListWrapperTwo>
         <StyledDivider />
-        <div style={{maxWidth: '600px'}}>
-          <div style={{ marginLeft: space[5] }}>
+        <StyledListWrapper>
+          <div>
             <List
-              listItem="Problem with ID"
+              listItem="Confirm your email"
             />
           </div>
-        </div>
+        </StyledListWrapper>
       </StyledVideoListContainer>
     </React.Fragment>
   )
