@@ -24,7 +24,7 @@ class Home extends Component {
           </div>
           <div style={{marginLeft: '32px'}}>
             <StyledParagraph>
-            This project is inspired by <StyledAnchor href="https://speakerdeck.com/vernalkick/antifragile-design" target="_blank">Kevin Clark's talk on Antifragile Design</StyledAnchor> and  <StyledAnchor href="https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680" target="_blank">Nassim Nicholas Taleb's Antifragile book</StyledAnchor>. I've found myself intrigued on how products respond when things don't go according to plan. I want to try and document some of these flows.
+            This project is inspired by <StyledAnchor href="https://speakerdeck.com/vernalkick/antifragile-design" target="_blank">Kevin Clark's talk on Antifragile Design</StyledAnchor> and  <StyledAnchor href="https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680" target="_blank">Nassim Nicholas Taleb's Antifragile book</StyledAnchor>. I've found myself intrigued on how products respond and adapt when things don't go according to plan. I want to try and document some of these flows.
             </StyledParagraph>
           </div>
         </StyledHeaderContainer>
