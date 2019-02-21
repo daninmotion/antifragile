@@ -1,9 +1,18 @@
 import styled from 'styled-components';
-import {fontSize, fontWeight, colors, space} from '../../theme';
+import {fontSize, fontWeight, space, colors} from '../../theme';
 
 export const StyledVideoListContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  padding-left: ${space[3]};
+  padding-right: ${space[3]};
+
+`
+
+export const StyledTitleContainer = styled.div`
+  margin-bottom: ${space[4]};
+  padding-left: ${space[3]};
+  padding-right: ${space[3]};
 `
 
 export const StyledTitle = styled.h1`
@@ -12,63 +21,30 @@ export const StyledTitle = styled.h1`
   line-height: normal;
 `;
 
-export const StyledVideoListWrapper = styled.div`
-  display: flex;
-  align-items: center;
-
-  @media (max-width: 768px) {
-    justify-content: space-between;
-  }
-`
-
-export const StyledVideoListWrapperTwo = styled.div`
-  max-width: 600px;
-
-  @media (max-width: 768px) {
-    width: 100%;
-    padding-left: ${space[2]};
-    padding-right: ${space[2]};
-  }
-`
-
-export const StyledDivider = styled.div`
-  width: 2px;
-  margin-left: ${space[5]};
-  background: ${colors.grey04};
-`
-
-export const StyledULTitle = styled.h2`
-  font-size: ${fontSize[2]};
-  font-weight: 600;
+export const StyledVideoListTitle = styled.h2`
+  font-size: 20px;
+  font-weight: ${fontWeight.bold};
   line-height: 1.5;
-  width: 320px;
   margin-bottom: ${space[3]};
-  margin-left: -${space[3]};
-
-  @media (max-width: 768px) {
-    max-width: 200px;
-  }
+  width: 100%;
 `
 
-export const StyledLeftButtonWrapper = styled.div`
-  margin-right: ${space[5]};
-
-  @media (max-width: 768px) {
-    margin-right: ${space[0]}
-  }
+export const StyledVideoUlList = styled.ul`
+  margin-left: ${space[3]};
 `
-
-export const StyledListWrapper = styled.div`
-  max-width: 600px;
-  margin-left: ${space[5]};
+export const StyledVerticalDivider = styled.div`
+  border-left: 1px solid ${colors.grey02};
+  height: 100px;
+  margin-left: ${space[6]};
+  margin-right: ${space[6]};
 
   @media (max-width: 768px) {
-    width: 100%;
-    margin-top: ${space[4]};
-    margin-left: 80px;
+    display: none;
   }
 `
 
 export const StyledVideoItemWrapper = styled.div`
-  margin-left: ${space[0]};
+  @media (max-width: 768px) {
+    margin-top: ${space[4]};
+  }
 `
