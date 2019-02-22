@@ -8,6 +8,7 @@ export const StyledLiTag = styled.li`
   list-style-type: none;
   position: relative;
   margin-bottom: ${space[2]};
+  min-width: 320px;
 `;
 
 export const StyledButton = styled.button`
