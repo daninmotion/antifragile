@@ -15,13 +15,14 @@ import {
 } from './style';
 
 const VideoList = (props) => {
-  const videoItems = props.videos.map((video, play) => {
+  const videoItems = props.videos.map((video, index) => {
     return (
       <VideoListItem
-        key={video.id}
-        video={video}
-        onUserSelected={props.onVideoSelect}
-        play={props.play}
+        key={video.id}//what i'm passing in
+        video={video} //what i'm passing in
+        active={props.active} //what i'm passing in
+        index={index} //what i'm passing in
+        onUserSelected={props.onVideoSelect} //what is being PASSED IN
       />
     )
   });

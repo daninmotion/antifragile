@@ -11,7 +11,7 @@ class Video extends Component {
       {url:'http://fast.wistia.net/embed/iframe/e4a27b971d', id: 'video2', title: 'Uber'},
     ],
     selectedVideo: {url:'https://fast.wistia.net/embed/iframe/j35pxlsj3u', id: 'video1', title: 'Airbnb'},
-    play: false
+    index_active: 0
   }
 
   render() {
@@ -24,9 +24,9 @@ class Video extends Component {
         </section>
         <StyledCardVideoContainer>
           <VideoList 
-            onVideoSelect={userSelected => this.setState({selectedVideo: userSelected, play: !this.state.play})}
+            onVideoSelect={(userSelected, index) => this.setState({selectedVideo: userSelected, index_active: index})}
             videos={this.state.videos}
-            play={this.state.play}
+            active={this.state.index_active}
           />
         </StyledCardVideoContainer>
       </React.Fragment>
