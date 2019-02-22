@@ -2,18 +2,9 @@
   "companies": [
     {
       "title": "Airbnb",
-      "subTitle": "Onboarding",
-      "flowTitle": "Sign up while booking"
-    },
-    {
-      "title": "Uber",
-      "subTitle": "Onboarding",
-      "flowTitle": "Sign up"
-    },
-    {
-      "title": "Postmates",
-      "subTitle": "Onboarding",
-      "flowTitle": "Sign up"
+      "subTitle": "Sign up",
+      "flowTitle": "Signing up while trying to book",
+      "flowTitle2": "Signing up but I already have an account"
     }
   ]
 }

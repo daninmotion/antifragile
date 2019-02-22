@@ -8,9 +8,9 @@ class Video extends Component {
   state = {
     videos: [
       {url:'https://fast.wistia.net/embed/iframe/txnanvuk7z', id: 'video1', title: "Signing up while trying to book"},
-      {url:'http://fast.wistia.net/embed/iframe/e4a27b971d', id: 'video2', title: 'Uber'},
+      {url:'https://fast.wistia.net/embed/iframe/mavqu11t73', id: 'video2', title: 'Signing up but I already have an account'},
     ],
-    selectedVideo: {url:'https://fast.wistia.net/embed/iframe/j35pxlsj3u', id: 'video1', title: 'Airbnb'},
+    selectedVideo: {url:'https://fast.wistia.net/embed/iframe/txnanvuk7z', id: 'video1', title: "Signing up while trying to book"},
     index_active: 0
   }
 

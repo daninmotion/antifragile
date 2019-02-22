@@ -11,7 +11,7 @@ const List = (props) => (
       <StyledLI>
         <TextButton 
           icon
-          href="/" 
+          href={props.href} 
           target="_blank"
           name="icon-arrow-up-right"
           width="16"

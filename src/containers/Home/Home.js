@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Card from '../../components/Card/Card/Card';
 import companyData from '../../components/Card/Card/companyData.json';
 import { Link } from 'react-router-dom';
+import {space} from '../../theme';
 
 import {StyledTitle, 
         StyledParagraph, 
@@ -28,7 +29,7 @@ class Home extends Component {
             </StyledParagraph>
           </div>
         </StyledHeaderContainer>
-          <section>
+          <section style={{marginBottom: space[6]}}>
             <div>
               {
                 companyData.companies.map((company, index) => {
@@ -38,6 +39,7 @@ class Home extends Component {
                         title={company.title}
                         subTitle={company.subTitle}
                         flowTitle={company.flowTitle}
+                        flowTitle2={company.flowTitle2}
                         key={index}
                       />
                     </Link>

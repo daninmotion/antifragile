@@ -1,6 +1,7 @@
 import React from 'react';
 import TextButton from '../../Buttons/TextButton/TextButton';
 import Overdrive from 'react-overdrive';
+import {space} from '../../../theme';
 
 import { StyledCard, 
          StyledCardWrapper,
@@ -15,9 +16,14 @@ const Card = (props) => (
         </Overdrive>
         <p>{props.subTitle}</p>
         <StyledListWrapper>
-          <li>
+          <li style={{marginBottom: space[3]}}>
             <TextButton>
               {props.flowTitle}
+            </TextButton>
+          </li>
+          <li>
+            <TextButton>
+              {props.flowTitle2}
             </TextButton>
           </li>
         </StyledListWrapper>

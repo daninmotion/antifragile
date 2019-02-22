@@ -47,6 +47,7 @@ const VideoList = (props) => {
         <StyledVideoItemWrapper>
           <List 
             listItem="Confirm your email"
+            href="https://s3.amazonaws.com/antifragile-ui-ux/Sign+up/Confirmation+email.png"
           />
         </StyledVideoItemWrapper>
       </StyledVideoListContainer>
