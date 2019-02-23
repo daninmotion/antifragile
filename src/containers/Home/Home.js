@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from '../../components/Card/Card/Card';
 import companyData from '../../components/Card/Card/companyData.json';
+import NavBar from '../../components/Nav/NavBar';
 import { Link } from 'react-router-dom';
 import {space} from '../../theme';
 
@@ -14,6 +15,9 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
+        <NavBar
+          // avatar={'https://randomuser.me/api/portraits/women/44.jpg'}
+        />
         <div style={{ marginTop: space[6] }}>
           <StyledHeaderContainer>
             <StyledTitleWrapper>

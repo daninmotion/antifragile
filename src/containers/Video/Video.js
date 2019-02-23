@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import VideoList from '../../components/VideoList/VideoList';
 import VideoDetail from '../../components/VideoDetail/VideoDetail';
+import NavBar from '../../components/Nav/NavBar';
 
 import { StyledCardVideoContainer } from './style';
 
@@ -17,6 +18,9 @@ class Video extends Component {
   render() {
     return (
       <React.Fragment>
+        <NavBar
+          // avatar={'https://randomuser.me/api/portraits/women/44.jpg'}
+        />
         <section>
           <VideoDetail 
             video={this.state.selectedVideo}
