@@ -4,7 +4,6 @@ import {fontSize, fontWeight, space, colors} from '../../theme';
 export const StyledVideoListContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   padding-left: ${space[3]};
   padding-right: ${space[3]};
 

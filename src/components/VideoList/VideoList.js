@@ -2,9 +2,6 @@ import React from 'react';
 import VideoListItem from '../VideoListItem/VideoListItem';
 import Overdrive from 'react-overdrive';
 import List from '../../components/Lists/List';
-import CircleButton from '../Buttons/CircleButton/CircleButton';
-
-// import { space } from '../../theme';
 import {
   StyledVideoListContainer,
   StyledTitle,
@@ -14,7 +11,6 @@ import {
   StyledTitleContainer,
   StyledVideoItemWrapper
 } from './style';
-import { colors, space } from '../../theme';
 
 const VideoList = (props) => {
   const videoItems = props.videos.map((video, index) => {
@@ -37,23 +33,11 @@ const VideoList = (props) => {
         </Overdrive>
       </StyledTitleContainer>
       <StyledVideoListContainer>
-        <div style={{marginRight: space[5]}}>
-          <CircleButton 
-            name="icon-arrow-left"
-            fill={colors.grey03}
-          />
-        </div>
         <div>
           <StyledVideoListTitle>Sign up</StyledVideoListTitle>
           <StyledVideoUlList>
             {videoItems}
           </StyledVideoUlList>
-        </div>
-        <div style={{marginLeft: space[3]}}>
-          <CircleButton 
-            name="icon-arrow-right"
-            fill={colors.grey03}
-          />
         </div>
         <div>
           <StyledVerticalDivider />
