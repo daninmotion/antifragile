@@ -4,6 +4,7 @@ import {fontSize, fontWeight, space, colors} from '../../theme';
 export const StyledVideoListContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding-left: ${space[3]};
   padding-right: ${space[3]};
 
@@ -35,7 +36,7 @@ export const StyledVideoUlList = styled.ul`
 export const StyledVerticalDivider = styled.div`
   border-left: 1px solid ${colors.grey02};
   height: 100px;
-  margin-left: ${space[6]};
+  margin-left: ${space[5]};
   margin-right: ${space[6]};
 
   @media (max-width: 768px) {
