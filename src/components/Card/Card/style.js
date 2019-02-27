@@ -33,6 +33,10 @@ export const StyledCard = styled.div`
 export const StyledCardWrapper = styled.div`
   margin-top: ${space[4]};
   padding-left: ${space[5]};
+
+  @media (max-width: 768px) {
+    padding-left: ${space[4]};
+  }
 `
 
 export const StyledListWrapper = styled.ul`
