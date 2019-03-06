@@ -28,7 +28,7 @@ class Video extends Component {
         </section>
         <StyledCardVideoContainer>
           <VideoList 
-            onVideoSelect={(userSelected, index) => this.setState({selectedVideo: userSelected, index_active: index})}
+            onVideoSelect={(video, index) => this.setState({selectedVideo: video, index_active: index})}
             videos={this.state.videos}
             active={this.state.index_active}
           />
